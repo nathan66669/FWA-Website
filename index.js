@@ -1,6 +1,9 @@
-const express = require('express')
-const app = express()
-app.get('/', (req, res) => {
-  res.send('HEY!')
-})
-app.listen(3000, () => console.log('Server running on port 3000'))
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Erm hey.</title>
+  </head>
+  <body>
+    <img src="https://media.giphy.com/media/3o6Zt7aSSZLX6U5WtW/source.gif">
+  </body>
+</html>
