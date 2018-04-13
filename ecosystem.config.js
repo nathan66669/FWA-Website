@@ -1,6 +1,6 @@
 module.exports = {
   apps: [{
-    name: 'FWA',
+    name: 'FWASite',
     script: './index.js'
   }],
   deploy: {

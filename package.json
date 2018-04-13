@@ -18,10 +18,9 @@
     "url": "https://github.com/nathan66669/FWA-Website/issues"
   },
   "homepage": "https://github.com/nathan66669/FWA-Website#readme",
-  "dependencies": {
-    "express": "^4.16.3"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "express": "^4.16.3",
     "pm2": "^2.10.2"
   }
 }
