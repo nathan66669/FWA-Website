@@ -1,6 +1,6 @@
 module.exports = {
   apps: [{
-    name: 'tutorial-2',
+    name: 'FWA',
     script: './index.js'
   }],
   deploy: {
@@ -8,9 +8,9 @@ module.exports = {
       user: 'ubuntu',
       host: 'ec2-54-245-41-97.us-west-2.compute.amazonaws.com',
       ref: 'origin/master',
-      key:     
-      repo: 'git@github.com:nathan66669/tutorial-pt2.git',
-      path: '/home/server/tutorial-pt-2',
+      key:  '~/.ssh/theFWA.pem',   
+      repo: 'git@github.com:nathan66669/FWA-Website.git',
+      path: '/home/FWA',
       'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
     }
   }

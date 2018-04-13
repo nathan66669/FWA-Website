@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nathan66669/tutorial-pt2.git"
+    "url": "git+https://github.com/nathan66669/FWA-Website.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nathan66669/tutorial-pt2/issues"
+    "url": "https://github.com/nathan66669/FWA-Website/issues"
   },
-  "homepage": "https://github.com/nathan66669/tutorial-pt2#readme",
+  "homepage": "https://github.com/nathan66669/FWA-Website#readme",
   "dependencies": {
     "express": "^4.16.3"
   },
