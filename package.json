@@ -18,7 +18,9 @@
     "url": "https://github.com/nathan66669/FWA-Website/issues"
   },
   "homepage": "https://github.com/nathan66669/FWA-Website#readme",
-  "dependencies": {},
+  "dependencies": {
+    "clash-of-clans-api": "^0.4.0"
+  },
   "devDependencies": {
     "express": "^4.16.3",
     "pm2": "^2.10.2"
