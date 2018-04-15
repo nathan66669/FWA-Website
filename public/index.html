@@ -195,7 +195,7 @@ span.psw {
 <script>
    var url = "http://ec2-18-217-122-161.us-east-2.compute.amazonaws.com/clan.php?tag=29YR22QY&key=ABC123"
    var myVar = setInterval(myTimer, 1000);
-fetch(url) // Call the fetch function passing the url of the API as a parameter
+/*fetch(url) // Call the fetch function passing the url of the API as a parameter
      .then(function(response) {
 console.log(response)
    return response.json();
@@ -203,10 +203,10 @@ console.log(response)
   .then(function(myJson) {
     console.log(myJson);
 document.getElementById("length2").innerHTML  = myJson.items.length;
-  });
+  });*/
    
     
-document.getElementById("length").innerHTML  = memberData.items.length;
+
      
 function myTimer() {
     var d = new Date();
