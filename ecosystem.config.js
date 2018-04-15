@@ -10,7 +10,7 @@ module.exports = {
       ref: 'origin/master',
       key:  '~/.ssh/theFWA.pem',   
       repo: 'git@github.com:nathan66669/FWA-Website.git',
-      path: '/home/ubuntu/FWAp',
+      path: '/home/ubuntu/FWA',
       'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
     }
   }
