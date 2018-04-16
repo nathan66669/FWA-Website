@@ -7,7 +7,7 @@ var APIclient = clashApi({
 });
 
 //Redis
-var redis2 = require('redis');
+var redis2 = require('ioredis');
 var redis = redis2.createClient();
 
 redis.on('error', function (err) {
@@ -21,5 +21,5 @@ APIclient
 
 redis.get('my test key', function (error, result) {
     if (error) throw error;
-    console.log('GET result ->', result)
+    console.log(result)
 });
