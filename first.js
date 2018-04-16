@@ -7,7 +7,7 @@ var APIclient = clashApi({
 });
 
 //Redis
-var redis2 = require('redis');
+var redis2 = require('ioredis');
 var redis = redis2.createClient();
 
 redis.on('error', function (err) {
