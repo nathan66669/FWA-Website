@@ -21,5 +21,5 @@ APIclient
 
 redis.get('my test key', function (error, result) {
     if (error) throw error;
-    console.log('GET result ->', result)
+    console.log(result)
 });
