@@ -1,7 +1,5 @@
 var firebase = require("firebase");
-const config = require('config');
+var config = require('config');
 
-firebase.initializeApp(config.get('fbConfig'));
+firebase.initializeApp(config.get('fbToken'));
 var database = firebase.database();
-var playersRef = database.ref("players");
-var clansRef = database.ref("clans");

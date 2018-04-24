@@ -1,9 +1,11 @@
 //my first test JS
-const config =require('config');
+var config = require('config');
 // import clashApi from 'node_modules/clash-of-clans-api';
-const clashApi = require('clash-of-clans-api');
-const APIclient = clashApi(config.get('clashToken'));
-const clansRef = require('fbconfig')
+var clashApi = require('clash-of-clans-api');
+var APIclient = clashApi(config.get('clashToken'));
+var database = require('fbconfig')
+var playersRef = database.ref("players");
+var clansRef = database.ref("clans");
 //Redis
 var redis2 = require('ioredis');
 var redis = redis2.createClient();
