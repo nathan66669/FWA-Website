@@ -20,6 +20,8 @@
   "homepage": "https://github.com/nathan66669/FWA-Website#readme",
   "dependencies": {
     "clash-of-clans-api": "^0.4.0",
+    "config": "^1.30.0",
+    "firebase": "^4.13.1",
     "ioredis": "^3.2.2"
   },
   "devDependencies": {

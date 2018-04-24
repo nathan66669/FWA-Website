@@ -3,3 +3,4 @@ node_modules
 
 # dev configuration
 config/production.json
+config
