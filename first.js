@@ -15,7 +15,6 @@ redis.on('error', function (err) {
 APIclient
     .clanByTag('#29YR22QY')
     .then(response => {
-        console.log(response)
         var tag = "29YR22QY";
         var data = { "members2": response.members };
         var update = {};
