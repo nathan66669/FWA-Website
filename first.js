@@ -1,11 +1,8 @@
-//my first test JS
-var config = require('config');
-// import clashApi from 'node_modules/clash-of-clans-api';
-var clashApi = require('clash-of-clans-api');
+var config = require('config'); //needed for config
+var clashApi = require('clash-of-clans-api');// import clashApi from 'node_modules/clash-of-clans-api';
 var APIclient = clashApi(config.get('clashToken'));
 var firebase = require('firebase')
-//var playersRef = database.ref("players");
-var initFB = require('./fbconfig.js')
+//var initFB = require('./fbconfig.js')
 
 var database = firebase.database();
 var playersRef = database.ref("players");
@@ -27,7 +24,7 @@ APIclient
     .clanByTag('#29YR22QY')
     .then(response => {
         var tag = "29YR22QY";
-        var data = { "members2": response.members };
+        var data = { "members3": response.members };
         var newData = {};
         newData[tag] = data;
         clansRef.update(newData)
