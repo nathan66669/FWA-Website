@@ -3,7 +3,7 @@ var config = require('config');
 // import clashApi from 'node_modules/clash-of-clans-api';
 var clashApi = require('clash-of-clans-api');
 var APIclient = clashApi(config.get('clashToken'));
-var database = require('fbconfig')
+var database = require('./fbconfig.js')
 var playersRef = database.ref("players");
 var clansRef = database.ref("clans");
 //Redis
@@ -19,9 +19,9 @@ APIclient
     .then(response => {
         var tag = "29YR22QY";
         var data = { "members2": response.members };
-        var update = {};
-        update[tag] = data;
-        clansRef.update(update)
+        var newData = {};
+        newData[tag] = data;
+        clansRef.update(newData)
     })
     .catch(err => console.log(err));
 
