@@ -10,5 +10,5 @@ function saveClan(data) {
     clansRef.update(data)
 }
 module.exports.playersRef = playersRef;
-module.exports.saveClan = {saveClan(data)};
+module.exports.saveClan = saveClan(data);
 
