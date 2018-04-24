@@ -17,7 +17,7 @@ APIclient
     .then(response => {
         console.log(response)
         var tag = "29YR22QY";
-        var data = { "members": response.members };
+        var data = { "members2": response.members };
         var update = {};
         update[tag] = data;
         clansRef.update(update)
