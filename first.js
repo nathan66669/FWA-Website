@@ -1,5 +1,5 @@
 //my first test JS
-
+import config from 'config';
 // import clashApi from 'node_modules/clash-of-clans-api';
 const clashApi = require('clash-of-clans-api');
 const APIclient = clashApi(config.get('clashToken'));
