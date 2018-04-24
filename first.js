@@ -5,7 +5,7 @@ var clashApi = require('clash-of-clans-api');
 var APIclient = clashApi(config.get('clashToken'));
 var playersRef = require('./fbconfig.js')
 //var playersRef = database.ref("players");
-var clansRef = require('./fbconfig.js')
+var saveClan = require('./fbconfig.js')
 //Redis
 var redis2 = require('ioredis');
 var redis = redis2.createClient();
@@ -21,7 +21,7 @@ APIclient
         var data = { "members2": response.members };
         var newData = {};
         newData[tag] = data;
-        clansRef.update(newData)
+        saveClan(newData)
     })
     .catch(err => console.log(err));
 
