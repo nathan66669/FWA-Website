@@ -2,12 +2,14 @@ var config = require('config'); //needed for config
 var clashApi = require('clash-of-clans-api');// import clashApi from 'node_modules/clash-of-clans-api';
 var APIclient = clashApi(config.get('clashToken'));
 var firebase = require('firebase')
-//var initFB = require('./fbconfig.js')
+var fbcommands = require('./fbconfig.js')
 
+/*
 var database = firebase.database();
 var playersRef = database.ref("players");
 var clansRef = database.ref("clans");
 //  clansRef.update(data)
+*/
 
 
 module.exports.playersRef = playersRef;
@@ -27,7 +29,7 @@ APIclient
         var data = { "members3": response.members };
         var newData = {};
         newData[tag] = data;
-        clansRef.update(newData)
+        fbcommands.saveClan(newData)
     })
     .catch(err => console.log(err));
 
