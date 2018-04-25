@@ -9,11 +9,12 @@ var database = firebase.database();
 var playersRef = database.ref("players");
 var clansRef = database.ref("clans");
 //  clansRef.update(data)
-*/
+
 
 
 module.exports.playersRef = playersRef;
 module.exports.saveClan = (data) => clansRef.update(data);
+*/
 //Redis
 var redis2 = require('ioredis');
 var redis = redis2.createClient();
